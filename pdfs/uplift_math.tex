@@ -1,0 +1,132 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{hyperref}
+
+
+%SetFonts
+
+%SetFonts
+
+
+\title{Appendix for Uplift Model}
+\author{}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+This is a more thorough description and derivation of the equations for the Uplift modeling framework outlined in UpliftModeling.ipynb by Dorian Goldman. Prepared by Ming Zhao.\\
+
+
+First, some definitions:
+\begin{itemize}
+\item $x_i \in X$ : independent variable for individual customer $i$;
+\item $a_i(x_i) \in A$ : action (e.g., treated or untreated, price up or down) for $x_i$;
+\item $y_i(x_i) \in R$ : reward or outcome for $x_i$ from action $a_i$;
+\item $w_i(x_i) \in W$ : probability distribution of the population $X$;
+\item $B(a|x)$ : distribution  of action $a(x_i)$ for the experiment, a.k.a., bias;
+\item $\Pi(a|x)$ : similar to $B(a|x)$ but for the whole population, a.k.a.\ policy;
+\item $Q$ :  probability distribution of reward for the experiment, specifically:
+\begin{align} % requires amsmath; align* for no eq. number
+   Q(y, a, x) = R(y | a, x) B(a | x) w(x) ;
+\label{q}
+\end{align}
+
+\item $\Omega$ :  distribution of reward, similar to $Q$ but for the whole population:
+\begin{align} % requires amsmath; align* for no eq. number
+   \Omega(y, a, x) = R(y | a, x) \Pi(a | x) w(x) ;
+\label{omega}
+\end{align}
+
+\item $h(x_i)$ : policy function for $x_i$, i.e., what action to use for $x_i$;
+\item $h^*(x_i)$ : optimal police function we want to solve for;
+\end{itemize}
+
+
+
+The general goal is to solve for the best policy function $h^*$ that maximizes the expectation of total reward for the whole population:
+\begin{align} % requires amsmath; align* for no eq. number
+    \mathbb{E}_{\Omega}(y) := \int y(x)  \Omega(x) \mathrm{d}x
+\end{align}
+However, since we do not know $\Omega$, we use $Q$, which we know, to estimate $\Omega$ using {\em importance sampling}: 
+\begin{align} % requires amsmath; align* for no eq. number
+    \mathbb{E}_{\Omega}(y) :=   \int y(x)  \Omega(x) \mathrm{d}x = \int y(x) \frac{\Omega(x)}{Q(x)} Q(x) \mathrm{d}x =: \mathbb{E}_{Q}\left(\frac{\Omega}{Q}y \right) .
+\label{E_omega}
+\end{align}    
+Recall from equations \ref{q} \& \ref{omega} that 
+\begin{align}
+   \frac{\Omega}{Q} = \frac{\Pi(a|x)}{B(a|x)}, 
+\end{align}
+so Eq \ref{E_omega} becomes
+\begin{align}
+\mathbb{E}_{\Omega}(y) = \mathbb{E}_{Q}\left(\frac{\Pi}{B}y \right) \sim \sum_{i=1}^{N} \frac{\Pi_i}{B_i} y_i  Q_i =: V_h(y)
+\label{E_omega2}
+\end{align}
+Because of the numerical approximation above, the normalization factor for coefficient $\frac{\Pi_i}{B_i}Q_i$ is unknown. For numerical stability, a common approach is to normalize it with the sum of all coefficients to get the  {\em self-normalized importance sampling estimate}\footnote{see \S9.2 in: \href{http://statweb.stanford.edu/~owen/mc/Ch-var-is.pdf}{http://statweb.stanford.edu/$\sim$owen/mc/Ch-var-is.pdf}}:
+\begin{align}
+V_h(y) \sim \hat{V}_h(y) =  \frac{\sum_{i=1}^{N} \frac{\Pi_i}{B_i} y_i  Q_i }{\sum _{i=1}^{N} \frac{\Pi_i}{B_i} Q_i}
+\label{V}
+\end{align}
+Note that $\frac{\Pi_i}{B_i} Q_i$ needs to be normalized together because $B_i$ is part of $Q$.
+
+$Q$ is the distribution of the experiment, i.e., data we collected, it can be approximated by a sum of delta functions, each represents a customer $i$. Based on Eq \ref{q} it can be written as:
+\begin{align}
+	Q(y, a, x) \sim \frac{1}{N} \sum_{i=1}^{N} \delta(y-y_i) \delta(a-a_i) \delta(x-x_i).
+	%Q(y, a, x) \sim  \frac{\delta(y-y_i) \delta(a-a_i) \delta(x-x_i)}{N}.
+\end{align}
+
+Similarly, $B$ for the experiment can be written as:
+\begin{align}
+	B(a|x) = \frac{1}{N} \sum_{i=1}^{N}\delta(a - a_i) .
+\end{align}
+Note that $a_i$ is a function of $x_i$, and can only take a few assigned actions or values. For instance, if $a_i \in \{0=\rm{untreated}, 1=\rm{treated}\}$, then $B(a_i) \in \{B(0), B(1)\}$. And in the special case that $a$ is randomly and uniformly distributed, $B(0) = B(1) = 1/2$. Likewise, in the special case where $y_i \in \{0, 1 \}$ and $a_i \in \{0, 1\}$, and both $y$ and $a$ are uniformly distributed and independent to each other, then $ Q_i(y,a,x) \in \{ (1,1, x_i), (1,0, x_i), (0,1,x_i), (0,0, x_i) \}$ and  $Q_i = 1/4$. In the extreme case that everyone gets $y=1$ regardless of the action $a_i$,  $ Q_i(y,a,x) \in \{ (1,1, x_i), (1,0, x_i) \}$, and $Q_i = 1/2$ for uniform distribution. \\
+
+For each experiment, the sum of delta functions in $Q$ is generally a constant $C$, i.e., $Q_i=C_i/N$. $C_i$ is unknown in some cases, or hard to compute for complex distributions, but can be normalized by the self-normalization term in the denominator of Eq \ref{V}. Thus, Eq \ref{V} becomes:
+\begin{align}
+\hat{V}_h(y) =  \frac{\sum_{i=1}^{N} \frac{\Pi_i}{B_i} y_i  Q_i }{\sum _{i=1}^{N} \frac{\Pi_i}{B_i} Q_i}
+=\frac{ \frac{C}{N} \sum_{i=1}^{N} \frac{\Pi_i}{B_i} y_i }{\frac{C}{N} \sum _{i=1}^{N} \frac{\Pi_i}{B_i}}  
+   =  \frac{  \sum_{i=1}^N  y_i \frac{\mathbf{1}(a_i=h(x_i))}{B(a_i|x_i)} }{ \sum_{i=1}^N  \frac{\mathbf{1}(a_i=h(x_i))}{B(a_i|x_i)} }
+  \end{align}
+
+For {\bf special case: $y\in\{0,1\}$}, we can split the positive and negative parts:
+\begin{align}
+\hat{V}_h(y)
+ = \frac{ \sum_{i_{\rm pos}} \frac{ \mathbf{1}(a_i=h(x_i))}{B(a_i|x_i)}}{ \sum_{i_{\rm pos}}\frac{\mathbf{1}(a_i=h(x_i))}{B(a_i|x_i)}+\sum_{i_{\rm neg}}\frac{ \mathbf{1}(a_i=h(x_i))}{B(a_i|x_i)}}, 
+\end{align}
+where $i_{\rm neg}$ and $i_{\rm pos}$ are the $i$ such that $y_i=0$ and $y=1$ respectively. 
+Now define 
+$$f(h) := \frac{f^-(h)}{f^+(h)} := \frac{\sum_{i_{\rm neg}}\frac{ \mathbf{1}(a_i=h(x_i))}{B(a_i|x_i)}}{\sum_{i_{\rm pos}}\frac{ \mathbf{1}(a_i=h(x_i))}{B(a_i|x_i)}},$$
+
+then 
+$$\hat V_h = \frac{1}{1+\frac{f^-}{f^+}}.$$ 
+
+Now we want to evaluate different policies $\hat{V}_h(y)$ by reducing its optimization to classification error, and comparing the standard classification algorithims in sci-kit learn to the R uplift model. 
+To maximize this expression (which is bounded by 1), we want $f^-/f^+$ to be as close to $0$ as possible ($0$ being the unique maximum of $x \mapsto \frac{1}{1+x}$ on $x \geq 0$).
+
+Notice that this is equivalent to minimizing the strictly convex, bounded from below loss:
+
+$$ \mathcal{L}_h = \frac{1}{N} \sum_{i=1}^N (y_i-\lambda)(h(x_i) - a_i)^2,$$
+where $0 < \lambda < 1$.
+For now, in order to do this, we simply train well known classifiers on the sets $\{y_i=0\}$ and $\{y_i=1\}$. More precisely we want to find $h$ which is close $h^*$, defined by
+
+$$ h^*(x_i) = a_i \textrm{ if } y_i=1$$
+
+$$ h^*(x_i) = 1-a_i \textrm{ if } y_i=0$$
+
+
+
+Now observe since $\mathcal{L}_h$ is strictly convex and bounded from below, it has a unqiue minimizer. Since $h^*$ above achieves the minimum, which is $\lambda$, this is the unique solution. 
+
+
+
+\end{document}  
+
