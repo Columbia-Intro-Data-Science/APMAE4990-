@@ -4,7 +4,6 @@
 
 a) *3 points* - Did you load the dataframe in pandas?
 
-
 b) *3 points* 
 
 c) *5 points* - Did you plot a curve where you see the maximum R^2 which should be around 0.98+?
