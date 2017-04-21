@@ -24,7 +24,8 @@ http:///0.0.0.0:80/train
 in your web browswer. 
 
 Then run
-```$ python sendrequest.py
+```
+$ python sendrequest.py
 ```
 
 This sends your data to the API and it outputs predictions. 
