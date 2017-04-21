@@ -13,20 +13,19 @@ pip install -r requirements.txt
 # BEFORE YOU DO ANYTHING
 Run
 ```
-python main.py
+$ python main.py
 ```
 
 Then go to 
 
 ```
 http:///0.0.0.0:80/train 
-``
+```
 in your web browswer. 
 
 Then run
+```$ python sendrequest.py
 ```
-python sendrequest.py
-``
 
 This sends your data to the API and it outputs predictions. 
 # Endpoints
