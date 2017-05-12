@@ -1,15 +1,15 @@
 Name,GitHub Name,Email,UNI,Final Project Name,Final Project Front End URL,Final Project GitHub URL,GRADE,COMMENTS
-Nanbin Xia,Miss-Xia,nx2138@columbia.edu,nx2138,ASL Recognition,http://104.196.189.137:5000/,https://github.com/Columbia-Intro-Data-Science/python-introduction-Miss-Xia/tree/master/Gesture-Recognition,90,should have done pca but not many examples
-Xiuyue Wang,caitlinwang,xw2454@columbia.edu,xw2454,ASL Recognition,http://104.196.189.137:5000/,https://github.com/Columbia-Intro-Data-Science/python-introduction-caitlinwang,90,should have done pca but not many examples
-Yuanqing Hong,yh2866,yh2866@columbia.edu,yh2866,Crime Frequency Prediction,http://130.211.140.62:5000/,https://github.com/yh2866/E4990-data-science-project,70,
-Claire Lee,srirachalee,gl2429@columbia.edu,gl2429,Crime Frequency Prediction,http://130.211.140.62:5000/,https://github.com/yh2866/E4990-data-science-project,20,
-Weiyi Li,liweiyi1992,wl2485@columbia.edu,wl2485,Crime Frequency Prediction,http://130.211.140.62:5000/,https://github.com/yh2866/E4990-data-science-project,70,* no commits
-Lingxiang Yu,LingxiangYu,ly2305@columbia.edu,ly2305,Currency Forecasting,http://98.148.68.235:8055/,,97,
-Liang Wei,RussiaBear,lw2716@columbia.edu,lw2716,Currency Forecasting,http://98.148.68.235:8055/,,97,
-Brian Soble,bsoble,bjs2217@columbia.edu,bjs2217,Electrical Load Analysis App,bsoble.pythonanywhere.com,https://github.com/Columbia-Intro-Data-Science/python-introduction-jhussman/tree/master/Git_Final/Project,90,interesting not crazy 
-Jamie Hussman,jhussman,jah2281@columbia.edu,jah2281,Electrical Load Analysis App,bsoble.pythonanywhere.com,https://github.com/Columbia-Intro-Data-Science/python-introduction-jhussman/tree/master/Git_Final/Project,90,
-Chenhui Huang,chenhuih,ch3216@columbia.edu,ch3216,Excessive Hospital Readmission Analysis,https://hospitalreadmission.shinyapps.io/rshiny/,https://github.com/chenhuih/APMA4990FinalProject,85,
-Bing Han,bh2589,bh2589@columbia.edu,bh2589,Excessive Hospital Readmission Analysis,https://hospitalreadmission.shinyapps.io/rshiny/,https://github.com/chenhuih/APMA4990FinalProject,85,
+Nanbin Xia,,,,ASL Recognition,http://104.196.189.137:5000/,https://github.com/Columbia-Intro-Data-Science/python-introduction-Miss-Xia/tree/master/Gesture-Recognition,90,should have done pca but not many examples
+Xiuyue Wang,,,,ASL Recognition,http://104.196.189.137:5000/,https://github.com/Columbia-Intro-Data-Science/python-introduction-caitlinwang,90,should have done pca but not many examples
+Yuanqing Hong,,,,Crime Frequency Prediction,http://130.211.140.62:5000/,https://github.com/yh2866/E4990-data-science-project,70,
+Claire Lee,,,,Crime Frequency Prediction,http://130.211.140.62:5000/,https://github.com/yh2866/E4990-data-science-project,20,
+Weiyi Li,,,,Crime Frequency Prediction,http://130.211.140.62:5000/,https://github.com/yh2866/E4990-data-science-project,70,* no commits
+Lingxiang Yu,,,,Currency Forecasting,http://98.148.68.235:8055/,,97,
+Liang Wei,,,,Currency Forecasting,http://98.148.68.235:8055/,,97,
+Brian Soble,,,,Electrical Load Analysis App,bsoble.pythonanywhere.com,https://github.com/Columbia-Intro-Data-Science/python-introduction-jhussman/tree/master/Git_Final/Project,90,interesting not crazy 
+Jamie Hussman,,,,Electrical Load Analysis App,bsoble.pythonanywhere.com,https://github.com/Columbia-Intro-Data-Science/python-introduction-jhussman/tree/master/Git_Final/Project,90,
+Chenhui Huang,,,,Excessive Hospital Readmission Analysis,https://hospitalreadmission.shinyapps.io/rshiny/,https://github.com/chenhuih/APMA4990FinalProject,85,
+Bing Han,,,,Excessive Hospital Readmission Analysis,https://hospitalreadmission.shinyapps.io/rshiny/,https://github.com/chenhuih/APMA4990FinalProject,85,
 Tian Hang,,,,Flight Delay Prediction,"https://flightdelaypredict-heroku.herokuapp.com",åªhttps://github.com/Columbia-Intro-Data-Science/python-introduction-th2669/tree/master/flightdelayproject,90,not roc why
 Rachel Field,,,,Heart Disease Predictor,http://cs3514.pythonanywhere.com/,https://github.com/radifi/heart-disease-predictor,80,didnt show reasons well 
 Chirag Sachar,,,,Heart Disease Predictor,http://cs3514.pythonanywhere.com/,https://github.com/radifi/heart-disease-predictor,80,didnt show reasons well 
