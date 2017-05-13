@@ -14,7 +14,7 @@ e) *7 points* - Did you properly explain why Lasso gives the zero coefficeints? 
 
 f) *7 points* - Did you check on 5 random folds that you get similar performance?
 
-e) *10 points* - Did you compute error bars by looking at ranges over the 5 folds and repeat the plot from part e)?
+g) *10 points* - Did you compute error bars by looking at ranges over the 5 folds and repeat the plot from part e)?
 
 
 
