@@ -11,7 +11,7 @@ $$ \sum_k$$
 There will be no midterms or exams, but rather assignments which will be handed in periodically throughout the term. The final project will be yours to choose, but will ideally be a productionalized tool developed via a web app that uses some of the methods (or others) taught in this class to solve a concrete problem.
 
 
-###Prerequisites:
+### Prerequisites:
  Exposure to undergraduate-level probability, statistics, graph theory, algorithms, and linear algebra is strongly encouraged, but these topics will be covered as we encounter them.
 
 
