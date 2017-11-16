@@ -42,15 +42,15 @@ Random Forest )
 
 
 ### Intro to Data Engineering
-- Map Reduce. SQL. Bash.
-
+- Map Reduce. SQL. Spark.
+- Cleaning, merging and processing data for modeling.
 
 ### Recommendation Engines and Personalziation
-- Diffusion on Graph and NYT Article Recommendations.
-- Topic Modeling.
+- Collaborative Filtering: Matrix Factorization, Neighborhood Models and Graph Diffusion.
+- Content Filtering: Topic Modeling, Regression, Classification.
+- Cold Starts. Continous Cold starts. Warm Starts. Performance Comparison and Analysis. 
 - Introduction to Bayesian statistics. Bayesian vs. Frequentist approach.
 - Multi-armed Bandits. Thompson Sampling. LinUCB.
-- Cold Starts. Continous Cold starts. Warm Starts. uTime Series Analysis and 
 
 ### Paper Distribution
 - The paper distribution problem at The New York Times.
