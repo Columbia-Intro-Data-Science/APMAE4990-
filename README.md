@@ -1,8 +1,8 @@
 # APMAE4990 - Introduction to Data Science in Industry
 
 ### Instructor: Dorian Goldman
-### Term: Spring 2016
-### Location: R 7:00pm-9:30pm 214 Seeley W. Mudd Building
+### Term: Spring 2018
+### Location: R 7:00pm-9:30pm 1024 Seeley W. Mudd Building
 
 ### Objectives: 
 This course is designed for graduate and advanced undergraduate students who wish to learn the fundamentals of data science and machine learning in the context of real world applications. An em- phasis will be placed on problems that companies such as Amazon, Booking.com, Netflix and others use with a slight emphasis on problems arising at The New York Times, where I was a data scientist. Despite a focus on applications, the course will be mathematically rigorous, but the goal is to motivate each theorem and problem by a concrete problem arising in industry. The course will follow an online iPython notebook where students can try out various algorithms in real time as we go through the course.
