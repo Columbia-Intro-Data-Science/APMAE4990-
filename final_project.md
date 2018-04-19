@@ -41,7 +41,8 @@ Below is a breakdown of the grading scheme.
 
 **Exploratory Analysis (10%):** 
 - Did you analyze the features and how they are related to the outcome variable? (regression: scatter plots, classification: conditional histograms). 
-- Did you look at correlations?
+- Did you look at correlations or chi-squared if the variables are categorical? 
+(https://en.wikipedia.org/wiki/Chi-squared_test. But feel free to find a package that does this automatically). 
 
 **Model Selection (50%)**: 
 - Did you randomly split your data into training and testing data (20%, 80%) using k-fold cross validation?
