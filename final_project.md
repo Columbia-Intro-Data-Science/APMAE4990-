@@ -39,7 +39,13 @@ The bulk of the grading is in the following sections.
 **Model Selection (50%)**: 
 - Did you randomly split your data into training and testing data (20%, 80%) using k-fold cross validation?
 - Did you perform regularization (very important if the number of features is large!)? Why did you use L^1 or L^2? I expect to see use of GridSearchCV for this with at least 2 fold cross validation.
-- Did you try out various models and see which one performed best? (You don't need to check all of them, but for classification/regression you should at least try Logistic (Linear) Regression and Random Forest Classification (Regression). For regression you should use R^2 as a comparison and for classification, use ROC. For recommendation systems, you should look at precision/recall. **I would like to see a performance comparison of at least two different models. **
+- Did you try out various models and see which one performed best? (You don't need to check all of them, but for classification/regression you should at least try (for example):
+
+*Classification:* Logistic Regression and Random Forest Classification. (Use ROC for evaluation)
+*Regression:* Linear Regression and Random Forest. (Use R^2 for evaluation)
+*Recommendation Engines:* Item/Item, User/User, Matrix Factorization. (Use precision/recall for evaluation).
+
+**I would like to see a performance comparison of at least two different models.**
 
 
 ## Design and Strategy (10%)
