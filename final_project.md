@@ -17,11 +17,11 @@ The bulk of the grading is in the following sections.
 - Did you account for missing values and outliers? 
 - Is there information leakage? ie. a variable which is actually inferred by the outcome (eg. predicting a user likes a movie using the fact that they've liked that movie before).
 
-**Feature Engineering (10%):** 
+**Feature Engineering (15%):** 
 - Did you convert categorical features into one hot encoded dummy variables? 
 - Was there an opportunity to make a new variable from the old ones that has more predictive power? (ie. if you are predicting the Titanic survivor problem and Cabin seems to be predictive but it's sparse, maybe replacing it with a binary variable "had a cabin or not" is better). 
 
-**Standarization (10%):** 
+**Standarization (5%):** 
 - Did you standardize your variables properly?
 
 ## Model Selection, Comparison and Cross Validation (60%):
