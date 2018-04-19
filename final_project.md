@@ -28,8 +28,8 @@ The bulk of the grading is in the following sections.
 
 **Use of databases (+15%):** If you use any kind of SQL database for your data storage/retrieval (MySQL, Postgres, etc).
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
-## Model Selection, Comparison and Cross Validation (60%):
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `## Model Selection, Comparison and Cross Validation (60%):`
+
 
 **Exploratory Analysis (10%):** 
 - Did you analyze the features and how they are related to the outcome variable? (regression: scatter plots, classification: conditional histograms). 
