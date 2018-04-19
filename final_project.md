@@ -1,6 +1,6 @@
 # Final Project Grading Outline
 
-Below is the outline for the grading of the final project. Your main goal is to have a public web server I can go to such as `http://yourname.pythonanywhere.com`. 
+Below is the outline for the grading of the final project. Your main goal is to have a public web server I can go to such as `http://yourname.somedomain.com`. 
 
 **Broad requirements:**
 - Each team member has pushed their contributions to Github. 
