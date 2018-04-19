@@ -1,6 +1,12 @@
 # Final Project Grading Outline
 
-Below is the outline for the grading of the final project. 
+Below is the outline for the grading of the final project. Your main goal is to have a public web server I can go to such as `http://yourname.pythonanywhere.com`. 
+
+**Broad requirements:**
+- Each team member has pushed their contributions to Github. 
+- A notebook is pushed along with the code base that summarizes your work on the steps below. 
+
+
 
 # Data Engineering and Machine Learning
 
@@ -68,7 +74,12 @@ Is the problem clearly stated and motivated? Is this something useful or is it c
 Is the website relatively easy to use? Does it accept some kind of user input and then apply a model, and return
 the user information?
 
+## Extra interesting ideas (BONUS 10-20%):
 
+This isn't necessary, but I'm leavin this here to allow for interesting and novel modeling/strategy approaches that I may not have thought of. 
+
+- Did you use a novel modelling approach for your problem that required coding something by hand?
+- Did you use clever processing or hierechcal models for your problem to customize for your context?
 
 
 
