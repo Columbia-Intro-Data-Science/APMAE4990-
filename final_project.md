@@ -18,6 +18,7 @@ The bulk of the grading is in the following sections.
 
 - Did you account for missing values and outliers? 
 - Is there information leakage? ie. a variable which is actually inferred by the outcome (eg. predicting a user likes a movie using the fact that they've liked that movie before).
+- Are some variables non-sensical or redundant? (ie. if you see "Male" sometimes and "M" other times, or numerical values in the gender column).
 
 **Feature Engineering (15%):** 
 - Did you convert categorical features into one hot encoded dummy variables? 
