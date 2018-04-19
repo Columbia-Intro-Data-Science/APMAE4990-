@@ -9,6 +9,7 @@ The bulk of the grading is in the following sections.
 **Data gathering/preprocessing** (may not be as relevant depending on project):
 
 - Did you find ways of processing your data to make the problem at hand more tractible/easier
+
 **Examples:** image formatting, string matching.
 
 **Data integrity checks:** 
@@ -16,7 +17,7 @@ The bulk of the grading is in the following sections.
 - Did you account for missing values and outliers? 
 - Is there information leakage? ie. a variable which is actually inferred by the outcome (eg. predicting a user likes a movie using the fact that they've liked that movie before).
 
-- **Features:** 
+**Feature Engineering:** 
 - Did you convert categorical features into one hot encoded dummy variables? 
 - Was there an opportunity to make a new variable from the old ones that has more predictive power? (ie. if you are predicting the Titanic survivor problem and Cabin seems to be predictive but it's sparse, maybe replacing it with a binary variable "had a cabin or not" is better). 
 
