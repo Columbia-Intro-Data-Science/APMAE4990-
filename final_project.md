@@ -6,10 +6,13 @@ The bulk of the grading is in the following sections.
 
 ## Data Gathering and Preparation (30%):
 
-- Data integrity checks: Did you account for missing values and outliers?
-- Features: Did you convert categorical features into one hot encoded dummy variables?
+- **Data integrity checks:** Did you account for missing values and outliers? Is there information leakage? ie. a variable which is actually inferred by the outcome (eg. predicting a user likes a movie using the fact that they've liked that movie before).
 
-##Model Selection, Comparison and Cross Validation (50%):
+- **Features:** Did you convert categorical features into one hot encoded dummy variables?
+
+- **Standarization:** Did you standardize your variables properly?
+
+## Model Selection, Comparison and Cross Validation (50%):
 
 
 # Design and Strategy
