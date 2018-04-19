@@ -10,7 +10,7 @@ Below is the outline for the grading of the final project. Your main goal is to 
 
 # Data Engineering and Machine Learning
 
-The bulk of the grading is in the following sections.
+Below is a breakdown of the grading scheme. 
 
 ## Data Gathering and Preparation (30%):
 
