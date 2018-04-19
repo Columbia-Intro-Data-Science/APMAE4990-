@@ -27,7 +27,7 @@ The bulk of the grading is in the following sections.
 **Standarization (5%):** 
 - Did you standardize your variables properly?
 
-**Use of databases (+15%):** If you use any kind of SQL database for your data storage/retrieval (MySQL, Postgres, etc).
+**Use of databases (BONUS) (+15%):** If you use any kind of SQL database for your data storage/retrieval (MySQL, Postgres, etc).
 
 
 ## Model Selection, Comparison and Cross Validation (60%):
