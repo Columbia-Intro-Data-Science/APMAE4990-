@@ -28,9 +28,9 @@ The bulk of the grading is in the following sections.
 
 **Use of databases (+15%):** If you use any kind of SQL database for your data storage/retrieval (MySQL, Postgres, etc).
 
-```diff
-- ## Model Selection, Comparison and Cross Validation (60%):`
-```
+
+## Model Selection, Comparison and Cross Validation (60%):
+
 
 **Exploratory Analysis (10%):** 
 - Did you analyze the features and how they are related to the outcome variable? (regression: scatter plots, classification: conditional histograms). 
