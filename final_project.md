@@ -36,7 +36,7 @@ The bulk of the grading is in the following sections.
 - Did you try out various models and see which one performed best? (You don't need to check all of them, but for classification/regression you should at least try Logistic (Linear) Regression and Random Forest Classification (Regression). For regression you should use R^2 as a comparison and for classification, use ROC. For recommendation systems, you should look at precision/recall. **I would like to see a performance comparison of at least two different models. **
 
 
-# Design and Strategy
+## Design and Strategy (10%)
 
 ## Problem Statement and Usefuleness: (5%)
 
