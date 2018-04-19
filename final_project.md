@@ -42,8 +42,14 @@ The bulk of the grading is in the following sections.
 - Did you try out various models and see which one performed best? (You don't need to check all of them, but for classification/regression you should at least try (for example):
 
 *Classification:* Logistic Regression and Random Forest Classification. (Use ROC for evaluation)
+
 *Regression:* Linear Regression and Random Forest. (Use R^2 for evaluation)
+
 *Recommendation Engines:* Item/Item, User/User, Matrix Factorization. (Use precision/recall for evaluation).
+
+*Image classification/segmentation:* Try neural nets and simple logistic regression. 
+
+*Time Series:* Auto-regressive models with different distributions (Poisson, Normal, etc). 
 
 **I would like to see a performance comparison of at least two different models.**
 
