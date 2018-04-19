@@ -77,7 +77,7 @@ the user information?
 
 ## Extra interesting ideas (BONUS 10-20%):
 
-This isn't necessary, but I'm leavin this here to allow for interesting and novel modeling/strategy approaches that I may not have thought of. 
+This isn't necessary, but I'm leaving this here to allow for interesting and novel modeling/strategy approaches that I may not have thought of. 
 
 - Did you use a novel modelling approach for your problem that required coding something by hand?
 - Did you use clever processing or hierechcal models for your problem to customize for your context?
