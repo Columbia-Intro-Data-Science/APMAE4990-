@@ -8,7 +8,8 @@ The bulk of the grading is in the following sections.
 
 **Data gathering/preprocessing** (may not be as relevant depending on project):
 
-- Did you find clever ways of processing your data to make the problem at hand more tractible/easier (ie. image formatting, string matching, web scraping, etc)?
+- Did you find ways of processing your data to make the problem at hand more tractible/easier
+**Examples:** image formatting, string matching.
 
 **Data integrity checks:** 
 
