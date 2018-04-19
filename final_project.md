@@ -1,5 +1,7 @@
 # Final Project Grading Outline
 
+Below is the outline for the grading of the final project. 
+
 # Data Engineering and Machine Learning
 
 The bulk of the grading is in the following sections.
@@ -26,6 +28,7 @@ The bulk of the grading is in the following sections.
 
 **Use of databases (+15%):** If you use any kind of SQL database for your data storage/retrieval (MySQL, Postgres, etc).
 
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 ## Model Selection, Comparison and Cross Validation (60%):
 
 **Exploratory Analysis (10%):** 
