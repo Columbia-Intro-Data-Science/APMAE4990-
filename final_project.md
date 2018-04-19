@@ -4,7 +4,7 @@
 
 The bulk of the grading is in the following sections.
 
-## Data Gathering and Preparation (20%):
+## Data Gathering and Preparation (30%):
 
 **Data gathering/preprocessing** (may not be as relevant depending on project):
 
@@ -12,19 +12,19 @@ The bulk of the grading is in the following sections.
 
 **Examples:** image formatting, string matching.
 
-**Data integrity checks:** 
+**Data integrity checks (10%):** 
 
 - Did you account for missing values and outliers? 
 - Is there information leakage? ie. a variable which is actually inferred by the outcome (eg. predicting a user likes a movie using the fact that they've liked that movie before).
 
-**Feature Engineering:** 
+**Feature Engineering (10%):** 
 - Did you convert categorical features into one hot encoded dummy variables? 
 - Was there an opportunity to make a new variable from the old ones that has more predictive power? (ie. if you are predicting the Titanic survivor problem and Cabin seems to be predictive but it's sparse, maybe replacing it with a binary variable "had a cabin or not" is better). 
 
-**Standarization:** 
+**Standarization (10%):** 
 - Did you standardize your variables properly?
 
-## Model Selection, Comparison and Cross Validation (70%):
+## Model Selection, Comparison and Cross Validation (60%):
 
 **Exploratory Analysis:** 
 - Did you analyze the features and how they are related to the outcome variable? (regression: scatter plots, classification: conditional histograms). 
