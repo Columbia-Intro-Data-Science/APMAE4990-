@@ -38,6 +38,7 @@ Below is a breakdown of the grading scheme.
 
 ## Model Selection, Comparison and Cross Validation (60%):
 
+### Supervised Problem (predicting an outcome such as a recommendation, stock price, disease, etc):
 
 **Exploratory Analysis (10%):** 
 - Did you analyze the features and how they are related to the outcome variable? (regression: scatter plots, classification: conditional histograms). 
@@ -63,6 +64,9 @@ Below is a breakdown of the grading scheme.
 
 **I would like to see a performance comparison of at least two different models.**
 
+### Unsupervised Problem (extracting meaning from text, finding similar images/documents, etc):
+
+To come
 
 ## Design and Strategy (10%)
 
