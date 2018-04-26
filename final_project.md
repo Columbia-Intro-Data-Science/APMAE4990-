@@ -66,7 +66,21 @@ Below is a breakdown of the grading scheme.
 
 ### Unsupervised Problem (extracting meaning from text, finding similar images/documents, etc):
 
-To come
+**Model Selection /Exploration (60%)**:
+- Did you analyze features and see relationships? 
+- Did you do dimensionality reduction and try making scatter plots of your data?
+- Did you then investigate properties of those clusters?
+- Did you check if the groups have comparable numbers of points, similar covariances? For instance, if you did K-means, did you check for the kinds of behavior we covered in class?
+- Based on the above, did you try various clustering algorithms appropriate for this problem? 
+- Are the clusters stable? (ie. when you take random subsets of your data, do you get similar clusters? When you choose different initial conditions, do you get the same result?
+- Do you have interpretations for the clusters you found? Can you justfiy the number of clusters you selected?
+
+**Examples:**
+
+- *Word embeddings/Topic models:* LDA, word2vec with K-means, GMM, DBSCAN. 
+- *Recommendations:* If you don't have any validation data, cosine similarity is a good start. Try item/item, user/user,  etc. Did you account for high dimensionality? 
+
+**Ideally you can find a way of validating your model in a supervised way. If this isn't possible, try to show that your clusters are stable, and make sense by investigating what they say. 
 
 ## Design and Strategy (10%)
 
