@@ -6,6 +6,12 @@ Below is the outline for the grading of the final project. Your main goal is to 
 - Each team member has pushed their contributions to Github. 
 - A notebook is pushed along with the code base that summarizes your work on the steps below. 
 
+**Specific Requirements:**
+
+- A 5-10 minute presentation of your work which will include: motivation, using the app, notebook presentation. **Note:** For CVN students, please provide a youtube link to a video (or upload it to your Github). 
+- An iPython notebook which shows your analysis/work. 
+- The full code base in the same Github repo. 
+- Provide a link in the projects worksheet to your completed project. 
 
 
 # Data Engineering and Machine Learning
