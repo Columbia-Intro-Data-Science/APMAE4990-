@@ -5,9 +5,9 @@
 ### Location: R 7:00pm-9:30pm 1024 Seeley W. Mudd Building
 
 ### Objectives: 
-This course is designed for graduate and advanced undergraduate students who wish to learn the fundamentals of data science and machine learning in the context of real world applications. An em- phasis will be placed on problems that companies such as Amazon, Booking.com, Netflix and others use with a slight emphasis on problems arising at The New York Times, where I was a data scientist. Despite a focus on applications, the course will be mathematically rigorous, but the goal is to motivate each theorem and problem by a concrete problem arising in industry. The course will follow an online iPython notebook where students can try out various algorithms in real time as we go through the course.
+This course is designed for graduate and advanced undergraduate students who wish to learn the fundamentals of data science and machine learning in the context of real world applications. An em- phasis will be placed on problems that companies such as Amazon, Booking.com, Netflix, Uber/Lyft, The New York Times and others. Despite a focus on applications, the course will be mathematically rigorous, but the goal is to motivate each tool by a concrete problem arising in industry. The course will follow an online iPython notebook where students can try out various algorithms in real time as we go through the course.
 
-$$ \sum_k$$
+
 There will be no midterms or exams, but rather assignments which will be handed in periodically throughout the term. The final project will be yours to choose, but will ideally be a productionalized tool developed via a web app that uses some of the methods (or others) taught in this class to solve a concrete problem.
 
 
@@ -27,36 +27,34 @@ There will be no midterms or exams, but rather assignments which will be handed 
 
 ###  Predictive learning (Supervised)
 
-- Predicting Virality of Content (Regression. Linear Regression,
-Random Forest )
-- User Churn, Acquisition and Conversion. (Classification. Exponential Family.)
-- Model selection and feature selection. Regularization. Real world performance evaluation.
+- Regression: Linear Regression, Random Forest, Gradient Boosting. 
+- Classification: User Churn, Acquisition and Conversion. (Classification. Exponential Family.)
+- Model selection and feature selection. Regularization. Real world performance evaluation and monitoring. 
+- Examples from publishing, ride sharing, online commerce and more.
 
 ### Descriptive Learning (Unsupervised)
-- Clustering users (Clustering and Support Vector Machines)
-- Correlation of features. Principle Component Analysis.
+- Clustering: K means, DBScan, Gaussian Mixture Models and Expectation Maximization. 
+- Correlation of features. Principle Component Analysis. Problem of dimensionality. 
+- LDA and topic modeling. 
 
 ### Prescriptive Modeling and A/B tests
 - A/B experiments. Causal inference introduction.
-- Uplift Modeling. How do we target who should have received treatment?
-
+- Offline Policy Selection. How do we target who should have received treatment after an experiment?
 
 ### Intro to Data Engineering
-- Map Reduce. SQL. Spark.
-- Cleaning, merging and processing data for modeling.
+- Map Reduce. SQL. 
+- Feature engineering: Testing out new features and verifying their predictive power.
+- The basics of API building. 
 
 ### Recommendation Engines and Personalziation
 - Collaborative Filtering: Matrix Factorization, Neighborhood Models and Graph Diffusion.
 - Content Filtering: Topic Modeling, Regression, Classification.
 - Cold Starts. Continous Cold starts. Warm Starts. Performance Comparison and Analysis. 
 - Introduction to Bayesian statistics. Bayesian vs. Frequentist approach.
-- Multi-armed Bandits. Thompson Sampling. LinUCB.
 
-### Paper Distribution
-- The paper distribution problem at The New York Times.
-- Reivew of Random Variables and Distributions.
-- Time Series Models. Auto Regressive. Poisson Regression. Negative Binomial Regression.
-- The Newsvendor Problem and profit optimization.
+# Reinforcement Learning
+- Multi-armed Bandits. Thompson Sampling. LinUCB.
+- Markov Decision Processes. 
 
 # References
 
