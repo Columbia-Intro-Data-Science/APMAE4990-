@@ -53,12 +53,12 @@ There will be no midterms or exams, but rather assignments which will be handed 
 - Introduction to Bayesian statistics. Bayesian vs. Frequentist approach.
 
 (if time permits)
-# Deep Learning 
+### Deep Learning 
 - When and why? The problem surrounding hype in deep learning.
 - Image and sound signal processing. 
 - Embeddings. 
 
-# Reinforcement Learning
+### Reinforcement Learning
 - Multi-armed Bandits. Thompson Sampling. LinUCB.
 - Markov Decision Processes. 
 
