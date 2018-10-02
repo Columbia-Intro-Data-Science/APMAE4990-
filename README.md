@@ -1,7 +1,7 @@
 # APMAE4990 - Introduction to Data Science in Industry
 
 ### Instructor: Dorian Goldman
-### Term: Spring 2018
+### Term: Spring 2019
 ### Location: R 7:00pm-9:30pm 1024 Seeley W. Mudd Building
 
 ### Objectives: 
