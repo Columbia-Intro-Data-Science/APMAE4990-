@@ -27,7 +27,7 @@ There will be no midterms or exams, but rather assignments which will be handed 
 
 ###  Predictive learning (Supervised)
 
-- Regression: Linear Regression, Random Forest, Gradient Boosting. Examples: ETA prediction for taxis, real estate prediction. 
+- Regression: Linear Regression, Random Forest, Gradient Boosting. Examples: ETA prediction for taxis, real estate prediction, news paper demand forecasting. 
 - Classification: Logistic Regression, Random Forest, Gradient Boosting. Examples: User Churn, Acquisition and Conversion. 
 - Model selection and feature selection. Regularization. Real world performance evaluation and monitoring. 
 - Examples from publishing, ride sharing, online commerce and more.
