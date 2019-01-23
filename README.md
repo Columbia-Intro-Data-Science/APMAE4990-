@@ -48,7 +48,7 @@ There will be no midterms or exams, but rather assignments which will be handed 
 - Feature engineering: Testing out new features and verifying their predictive power.
 - The basics of API building. 
 
-### Recommendation Engines and Personalziation
+### Recommendation Engines and Personalization
 - Collaborative Filtering: Matrix Factorization, Neighborhood Models and Graph Diffusion.
 - Content Filtering: Topic Modeling, Regression, Classification.
 - Cold Starts. Continous Cold starts. Warm Starts. Performance Comparison and Analysis. 
