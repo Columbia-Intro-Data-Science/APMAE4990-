@@ -2,7 +2,7 @@
 
 ### Instructor: Dorian Goldman
 ### Term: Spring 2019
-### Location: R 5:30pm-8:00pm 1024 Seeley W. Mudd Building
+### Location: R 5:30pm-8:00pm 413 Kent
 
 ### Objectives: 
 This course is designed for graduate and advanced undergraduate students who wish to learn the fundamentals of data science and machine learning in the context of real world applications. An emphasis will be placed on problems encountered by companies such as Amazon, Booking.com, Netflix, Uber/Lyft, The New York Times and others. Despite a focus on applications, the course will be mathematically rigorous, but the goal is to motivate each tool by a concrete problem arising in industry. The course will follow an online iPython notebook where students can try out various algorithms in real time as we go through the course.
